@@ -1,0 +1,182 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  font-family: serif;
+  
+}
+.navbar-brand{
+  margin-left: 75px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: serif;
+  
+}
+.navbar-nav {
+  margin-left: 300px;
+  font-weight: 600;
+  width: 100%;
+  /* background-color: #f7c42b; */
+}
+
+li {
+  margin-right: 20px;
+}
+/* 
+.nav-log{
+  margin-left: 40%;
+} */
+/*end of navbar*/
+
+
+/*718 models*/
+hr{
+  width: 50%;
+}
+
+.heading-718{
+  color: black;
+  padding: 10px;
+  font-family: serif;
+  font-weight: 900;
+  margin-top: 20px;
+  font-size: 50px;
+  /*filter: drop-shadow(10px 10px 30px grey);*/
+  
+}
+.Cayman-GT4{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: serif;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.cayman-div{
+  background-color: transparent;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /**/
+  /*animate*/
+  animation:cayman linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+
+
+@media only screen and (max-width: 740px) and (min-width: 100px) {
+  .card-title {
+    font-size: 13px !important;
+    
+  }
+  .heading-718{
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 9px !important;
+    
+  }
+  .cay1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 420px !important;
+  }
+  
+
+  .cay2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px !important;
+    margin-bottom: 650px !important;
+  }
+
+  .Cayman-GT4{
+    margin-top: 200px;
+    text-align: left;
+    margin-left: 50px !important;
+  }
+  .gt2{
+    text-align: left;
+    /*margin-left: 25px*/
+    text-align: center!important;
+    font-size: 15px;
+  }
+  .gt1{
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+
+
+/*appear animate*/
+
+@keyframes cayman {
+  from{
+      
+    transform: translateY(100px);
+  }
+  to{
+    
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+
+/*end appear animate*/
+
+/*end of 718 models*/
+
+/*footer*/
+/*footer*/
+
+footer {
+  font-family: serif;
+  background: linear-gradient(145deg, #212529, #343a40);
+  border-top-left-radius: 80px;
+  /*animate*/
+  animation:foot linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+/*appear animate*/
+
+@keyframes foot {
+  from{
+      
+    transform: translateY(100px);
+  }
+  to{
+    
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+footer p{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+footer h3, footer h5 {
+ font-weight: bold;
+}
+
+footer .social-icons i {
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f7c42b; /* Signature Porsche Gold */
+}
+
+
+/*end of footer*/

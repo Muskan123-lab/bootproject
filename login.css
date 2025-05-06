@@ -1,0 +1,162 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  font-family: serif;
+  
+}
+.navbar-brand{
+  margin-left: 75px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: serif;
+  
+}
+
+.navbar-nav {
+  margin-left: 300px;
+  font-weight: 600;
+  width: 100%;
+  /* background-color: #f7c42b; */
+}
+
+li {
+  margin-right: 20px;
+}
+/* 
+.nav-log{
+  margin-left: 40%;
+} */
+/*end of navbar*/
+
+
+.log-box{
+  height: 450px;
+  background-image: url("images/login-img.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  margin-top: 50px;
+ /* margin-bottom: 40px;*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  filter: blur(2px);
+}
+
+
+.log-box-sub{
+  height: 360px;
+  width: 50%;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 1px solid white;
+  position: relative;
+  top: -410px;
+  left: 220px;
+}
+
+@media only screen and (max-width: 910px) and (min-width: 230px) {
+  .log-box-sub {
+    left: 100px;
+  }
+}
+
+
+
+.log-box-sub h1{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: serif;
+  margin-top: 5px;
+}
+
+.log-box-sub p{
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-family: serif;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+.log-box-sub form{
+  text-align: center;
+}
+
+.log-box-sub input{
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 230px;
+  padding: 15px;
+  margin-top: 50px;
+  color: rgb(52, 167, 196);
+}
+
+.log-box-sub button{
+  height: 35px;
+  width: 230px;
+  padding: 1px;
+  margin-top: 20px;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 17;
+}
+
+.log-box-sub .sign{
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+
+/*footer*/
+/*footer*/
+
+footer {
+  font-family: serif;
+  background: linear-gradient(145deg, #212529, #343a40);
+  border-top-left-radius: 80px;
+  /*animate*/
+  animation:foot linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+/*appear animate*/
+
+@keyframes foot {
+  from{
+      
+    transform: translateY(100px);
+  }
+  to{
+    
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+footer p{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+footer h3, footer h5 {
+ font-weight: bold;
+}
+
+footer .social-icons i {
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f7c42b; /* Signature Porsche Gold */
+}
+
+
+/*end of footer*/

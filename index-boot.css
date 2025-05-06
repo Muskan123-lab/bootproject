@@ -1,0 +1,659 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  font-family: serif;
+
+}
+
+.navbar-brand {
+  margin-left: 50px;
+  /*margin-left: 200px;*/
+
+  font-size: 25px;
+  font-weight: 700;
+  font-family: serif;
+
+}
+
+.navbar-nav {
+  margin-left: 300px;
+  font-weight: 600;
+  width: 100%;
+  /* background-color: #f7c42b; */
+}
+
+li {
+  margin-right: 20px;
+}
+/* 
+.nav-log{
+  margin-left: 40%;
+} */
+
+/*end of navbar
+.video-cap {
+  font-family: serif;
+  font-weight: 600;
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  
+  left: 150px;
+  top: 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .video-cap {
+    font-size: 25px;
+    top: 50px;
+  }
+}*/
+
+/*
+.button1 {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  left: 150px;
+  top: 260px;
+  width: 250px;
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+}*/
+
+/*
+.youtube{
+  margin-top: 5px;
+  width: 100%;
+  height: 400px;
+}*/
+.embed-responsive-item {
+  background-color: black;
+
+
+}
+
+#div1 {
+  animation: mymove 6s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+#div1 {
+  animation-timing-function: ease;
+}
+
+@keyframes mymove {
+
+  /*from {left: -300px;}
+  to {left: 50px;}*/
+  from {
+    opacity: 0;
+    scale: 0;
+
+  }
+
+  to {
+    opacity: 0.9;
+    scale: 1;
+
+  }
+}
+
+.div-3 {
+  height: 200px;
+}
+
+.divs {
+  width: 200px;
+}
+
+.divs1 {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px grey);
+}
+
+.divs2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px grey);
+}
+
+.divs3 {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px grey);
+}
+
+.divs1,
+.divs2,
+.divs3 {
+  height: 225px;
+  transition: transform .2s;
+  /* Animation */
+  /*animate*/
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+
+
+@media only screen and (max-width: 900px) {
+  .three-boxes {
+    flex-wrap: wrap;
+    height: 700px
+  }
+  .divs{
+    width: 150px;
+  }
+  .divs1{
+    margin-left: 16px;
+  }
+  .divs2{
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+  .divs3{
+    margin-left: 16px;
+    margin-top: 15px;
+  }
+}
+
+
+
+/*appear animate*/
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 0.9;
+    transform: translateX(0px);
+  }
+}
+
+/*end appear animate*/
+
+/*cards*/
+.card-o {
+  margin-top: 165px;
+}
+
+.card-h {
+  /*color: rgb(245, 245, 245);*/
+  background-color: black;
+  color: white;
+  font-family: serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#h-card1 {
+  margin-right: 2px;
+}
+
+#h-card2 {
+  margin-right: 18px;
+}
+
+#h-card3 {
+  margin-right: 18px;
+}
+
+.btn1 {
+  background-color: transparent;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+/*end of cards*/
+
+/*models*/
+
+.models-head {
+  text-align: center;
+  margin-top: 100px;
+  font-family: serif;
+  font-weight: 800;
+  color: black;
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+/*
+@media only screen and (max-width: 910px) and (min-width: 530px)  {
+  .models-head{
+    margin-top: 250px;
+  }
+}*/
+/*
+@media only screen and (max-width: 530px) and (min-width: 330px)  {
+  .models-head{
+    margin-top: 500px;
+  }
+}*/
+/*
+@media only screen and (max-width: 910px) {
+  .models-head{
+    margin-top: 250px;
+  }
+}*/
+
+
+@keyframes model {
+  from {
+    opacity: 0;
+    scale: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 0.9;
+    scale: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*end of animate model*/
+
+/*cards models*/
+@media only screen and (max-width: 750px) and (min-width: 557px)  {
+  .model-flex1{
+    
+    margin-left: 70px;
+  }
+  .card-img1{
+    margin-bottom: 50px;
+   
+  }
+  .card-img2{
+    margin-bottom: 50px;
+  }
+  .card-img3{
+    margin-top: 450px;
+    margin-left: 70px;
+  }
+
+  .card-img4{
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+
+  .card-img5{
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+
+  .card-img6{
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 557px) and (min-width: 130px)  {
+  .model-flex1{
+    
+    margin-left: 10px;
+  }
+  
+  .card-img1{
+    margin-bottom: 50px;
+   margin-left: 0px;
+   width: 80px;
+  }
+  .card-img2{
+    margin-bottom: 50px;
+    margin-left: 0px;
+   width: 80px;
+  }
+  .card-img3{
+    margin-top: 450px;
+    margin-left: 0px;
+   width: 80px;
+  }
+
+  .card-img4{
+    margin-top: 50px;
+    margin-left: 0px;
+   width: 80px;
+  }
+
+  .card-img5{
+    margin-top: 50px;
+    margin-left: 0px;
+    width: 80px;
+  }
+
+  .card-img6{
+    margin-top: 50px;
+    margin-left: 0px;
+   width: 80px;
+  }
+  .card-model-link{
+    width: 150px;
+  }
+  .model-flex2{
+    margin-left: 10px;
+  }
+}
+
+
+.card-img1 {
+  background-image: url("images/porsche18.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px black);
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card-img2 {
+  background-image: url("images/porsche--911.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px black);
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card-img3 {
+  background-image: url("images/porsche-taycan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px black);
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card-img4 {
+  background-image: url("images/porsche-panamera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px black);
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card-img5 {
+  background-image: url("images/porsche-macan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px black);
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card-img6 {
+  background-image: url("images/porsche-cayenne.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(20px 20px 10px black);
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card-h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.card-h1,
+.card-f {
+  color: white;
+  background-color: transparent;
+  font-family: serif;
+}
+
+.card-model-body {
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.card-link-div {
+  width: 300px;
+  border: 2px solid white;
+  padding: 10px;
+  text-align: center;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+
+.card-link-div a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-model-link {
+  text-decoration: none;
+  color: white;
+  font-family: serif;
+  font-size: 20px;
+}
+
+/*cards models*/
+
+/*end of models 1*/
+
+/*find your porsche*/
+
+.find-porsche-main {
+  height: 400px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*animate*/
+  animation: find linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+
+/*appear animate*/
+
+@keyframes find {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to {
+    opacity: 0.9;
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+
+
+.find-porsche-img {
+  height: 350px;
+  width: 60%;
+  background-image: url("images/porsche-find.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.find-porsche-content {
+  height: 350px;
+  width: 40%;
+  background-color: black;
+  color: white;
+  font-family: serif;
+}
+
+.find-porsche-content p{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.find-porsche-content a{
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.find-porsche-content h2{
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 230px)  {
+  .find-porsche-main{
+    margin-left: 14px;
+  
+  }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 500px)  {
+  
+  .find-porsche-content p{
+    
+    margin-top: 13px;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  .find-porsche-content h2{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+
+  .find-porsche-content a{
+    font-size: 10px;
+    margin-top: 2px;
+    width: 110px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 100px)  {
+  
+  .find-porsche-main{
+    width: 300px;
+    margin-left: 30px;
+  }
+  .find-porsche-content p{
+    
+    margin-top: 13px;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+
+  .find-porsche-content h2{
+    font-size: 13px;
+    margin-top: 25px;
+    margin-left: 5px;
+  }
+
+  .find-porsche-content a{
+    font-size: 9px;
+    margin-top: 55px;
+    width: 100px;
+    margin-left: 5px;
+  }
+}
+
+
+.find-porsche-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(17, 142, 142);
+  filter: drop-shadow(2px 2px 3px rgb(17, 142, 142));
+}
+
+/*end of find your porsche*/
+
+
+/*footer*/
+
+footer {
+  font-family: serif;
+  background: linear-gradient(145deg, #212529, #343a40);
+  border-top-left-radius: 80px;
+  /*animate*/
+  animation: foot linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+
+
+@media only screen and (max-width: 460px) and (min-width: 100px)  {
+  footer .container-fluid{
+    width: 100%;
+    margin-left: 15px;
+  }
+  footer{
+    margin-left: 51x;
+  }
+}
+
+
+/*appear animate*/
+
+@keyframes foot {
+  from {
+
+    transform: translateY(100px);
+  }
+
+  to {
+
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+footer p {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+footer h3,
+footer h5 {
+  font-weight: bold;
+}
+
+footer .social-icons i {
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f7c42b;
+  /* Signature Porsche Gold */
+}
+
+
+/*end of footer*/

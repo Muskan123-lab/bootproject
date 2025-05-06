@@ -1,0 +1,346 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  font-family: serif;
+  
+}
+.navbar-brand{
+  margin-left: 75px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: serif;
+  
+}
+.navbar-nav {
+  margin-left: 300px;
+  font-weight: 600;
+  width: 100%;
+  /* background-color: #f7c42b; */
+}
+
+li {
+  margin-right: 20px;
+}
+/* 
+.nav-log{
+  margin-left: 40%;
+} */
+/*end of navbar*/
+
+
+.service-div{
+  height: 400px;
+  width: 100%;
+  background-color: #212529;
+  background-image: url("images/porsche-service-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.find-service{
+  margin-left: 285px;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 230px)  {
+  .find-service{
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 455px) and (min-width: 250px)  {
+  .nav-link{
+    font-size: 10px;
+    
+  }
+  .nav-item 
+  {
+    margin: 0px;
+  }
+  .nav li{
+    margin: 0px;
+  }
+  .find-service{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 250px) and (min-width: 100px)  {
+  .nav-link{
+    font-size: 8px;
+    
+  }
+  .nav-item 
+  {
+    margin: 0px;
+  }
+  .nav li{
+    margin: 0px;
+  }
+  .find-service{
+    font-size: 9px;
+  }
+  .find-service i{
+    font-size: 9px;
+  }
+}
+
+/*end of find service*/
+
+
+
+
+/*philosophy*/
+.philo{
+  /*animate model*/
+  animation: model linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes model {
+  from {
+    opacity: 0;
+    
+    transform: translateX(-500px);
+  }
+
+  to {
+    opacity: 0.9;
+   
+    transform: translateX(0px);
+  }
+}
+
+#philosophy{
+  font-family: serif;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.content{
+  height: 350px;
+  
+  font-weight: 600;
+ /* background-color: antiquewhite;*/
+  margin-top: 40px;
+}
+.para{
+  font-family: serif;
+  font-weight: 500;
+}
+.philohead{
+  margin-top: 75px;
+}
+.philopic{
+  height: 350px;
+  background-image: url("images/philosophy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*end of philosophy*/
+
+/*service*/
+.ser{
+  /*animate model*/
+  animation: service linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 470px)  {
+  .ser{
+    margin-top: 250px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 470px) and (min-width: 270px)  {
+  .ser{
+    margin-top: 310px;
+    flex-wrap: wrap;
+  }
+  .ser h1{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 270px) and (min-width: 100px)  {
+  .ser{
+    margin-top: 400px;
+    flex-wrap: wrap;
+  }
+  .ser h1{
+    font-size: 25px;
+  }
+}
+
+@keyframes service {
+  from {
+    opacity: 0;
+    
+    transform: translateX(500px);
+  }
+
+  to {
+    opacity: 0.9;
+   
+    transform: translateX(0px);
+  }
+}
+#service{
+  font-family: serif;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
+.servicepic{
+  height: 350px;
+  background-image: url("images/servicee.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*end of service*/
+
+/*vehicle info*/
+.vehi{
+  /*animate model*/
+  animation: vehicle linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 480px)  {
+  .vehi{
+    margin-top: 250px;
+    margin-bottom: 300px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 290px)  {
+  .vehi{
+    margin-top: 310px;
+    margin-bottom: 480px;
+    flex-wrap: wrap;
+  }
+  .vehi h1{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 290px) and (min-width: 105px)  {
+  .vehi{
+    margin-top: 380px;
+    margin-bottom: 550px;
+    flex-wrap: wrap;
+  }
+  .vehi h1{
+    font-size: 25px;
+  }
+}
+
+
+
+@media only screen and (max-width: 910px) and (min-width: 770px)  {
+  .vehi{
+    
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 770px) and (min-width: 512px)  {
+  .vehi{
+    
+    margin-bottom: 350px;
+  }
+}
+
+@keyframes vehicle {
+  from {
+    opacity: 0;
+    
+    transform: translateX(-500px);
+  }
+
+  to {
+    opacity: 0.9;
+   
+    transform: translateX(0px);
+  }
+}
+.vehicle-head{
+  margin-top: 55px;
+}
+
+#vehicle{
+  font-family: serif;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
+.vehiclepic{
+  height: 350px;
+  background-image: url("images/vehicle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*end of vehicle*/
+
+
+
+
+
+/*footer*/
+/*footer*/
+
+footer {
+  font-family: serif;
+  background: linear-gradient(145deg, #212529, #343a40);
+  border-top-left-radius: 80px;
+  /*animate*/
+  animation:foot linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+/*appear animate*/
+
+@keyframes foot {
+  from{
+      
+    transform: translateY(100px);
+  }
+  to{
+    
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+footer p{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+footer h3, footer h5 {
+ font-weight: bold;
+}
+
+footer .social-icons i {
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f7c42b; /* Signature Porsche Gold */
+}
+
+
+/*end of footer*/

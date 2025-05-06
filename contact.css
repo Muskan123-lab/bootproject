@@ -1,0 +1,299 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  font-family: serif;
+  
+}
+.navbar-brand{
+  margin-left: 75px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: serif;
+  
+}
+.navbar-nav {
+  margin-left: 300px;
+  font-weight: 600;
+  width: 100%;
+  /* background-color: #f7c42b; */
+}
+
+li {
+  margin-right: 20px;
+}
+/* 
+.nav-log{
+  margin-left: 40%;
+} */
+/*end of navbar*/
+
+
+
+/*contact*/
+
+.contact-img-box{
+  height: 420px;
+  background-color: #f7c42b;
+  background-image: url("images/contact.jpg");
+  background-size: cover;
+}
+
+
+.contact-img-box h1{
+  font-family: serif;
+  font-weight: 800;
+  color: white;
+  padding-top: 150px;
+  text-align: center;
+  font-size: 60px;
+}
+.contact-box{
+  height: 300px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 630px) and (min-width: 230px) {
+  .contact-box {
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    margin-top: 50px;
+  }
+}
+.sub-contact{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid rgb(196, 194, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*animate model*/
+  animation: contact linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@media only screen and (max-width: 630px) and (min-width: 230px) {
+  .sub-contact {
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    margin-top: 30px;
+  }
+}
+
+@keyframes contact {
+  from {
+    opacity: 0;
+    
+    transform: translateY(-100px);
+  }
+
+  to {
+   opacity: 0.9;
+   
+   transform: translateY(0px);
+  }
+}
+.contact-icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(196, 194, 191);
+}
+
+.contact-icon i{
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.contact-icon .icon2{
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+}
+
+
+.contact-icon .icon3{
+  color: black;
+  padding: 17px;
+  font-size: 20px;
+}
+
+
+
+.touch-box{
+  height: 450px;
+  background-color: #333230;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 633px) and (min-width: 230px) {
+  .touch-box {
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    margin-top: 250px;
+  }
+}
+.touch-sub1{
+  height: 380px;
+  width: 40%;
+  border-radius: 20px;
+  background-image: url("images/touch-pic.avif");
+  background-size: cover;
+}
+
+
+.touch-sub2{
+  height: 380px;
+  width: 40%;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f7c42b; */
+  /*align-items: center;*/
+}
+@media only screen and (max-width: 770px) and (min-width: 230px) {
+  .touch-sub2 h1{
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    padding-top: 0px;
+    font-size: 28px;
+    margin-bottom: 0px;
+   
+  }
+}
+
+.touch-sub2 h1{
+  font-family: serif;
+  font-weight: 700;
+  color: white;
+  padding-top: 2px;
+  margin-left: 10px;
+}
+
+
+.form-group label{
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 770px) and (min-width: 230px) {
+  
+    .touch-box {
+      /*padding-top: 20px;
+      font-size: 20px;*/
+      height: 800px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .touch-sub1{
+      width: 70%;
+    }
+  
+  .form-group label{
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    padding-top: 0px;
+    font-size: 15px;   
+  }
+
+  .form-group input{
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    padding-top: 0px;
+    font-size: 15px;
+    height: 20px;
+    width: 150px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 430px) and (min-width: 130px) {
+  
+  .touch-box {
+    /*padding-top: 20px;
+    font-size: 20px;*/
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 450px;
+  }
+}
+
+
+.touch-button{
+  width: 210px;
+}
+
+
+
+/*end contact*/
+
+
+
+/*footer*/
+/*footer*/
+
+footer {
+  font-family: serif;
+  background: linear-gradient(145deg, #212529, #343a40);
+  border-top-left-radius: 80px;
+  /*animate*/
+  animation:foot linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /*end animate*/
+}
+/*appear animate*/
+
+@keyframes foot {
+  from{
+      
+    transform: translateY(100px);
+  }
+  to{
+    
+    transform: translateY(0px);
+  }
+}
+
+/*end appear animate*/
+footer p{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+footer h3, footer h5 {
+ font-weight: bold;
+}
+
+footer .social-icons i {
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f7c42b; /* Signature Porsche Gold */
+}
+
+
+/*end of footer*/
